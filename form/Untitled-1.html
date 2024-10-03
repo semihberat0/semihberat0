@@ -1,0 +1,142 @@
+  <!DOCTYPE html>
+  <html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+  </head>
+  <style>
+    *{
+      margin: 5px;
+      
+    }
+    body{
+      background-color: rgb(138, 138, 138);
+      text-align: center;
+      align-items: center;
+    }
+    
+    fieldset{
+      margin: 2px;
+      padding: 2px;
+      width: 320px;
+      text-align: center;     
+      
+    }
+    label {
+      width: 100px;
+      margin-right: 10px; 
+    }
+    input{
+      background-color: rgb(61, 61, 61);
+      color: rgb(255, 215, 103);
+
+    }
+    select{
+      border: none;
+      background-color: rgb(51, 51, 51);
+    }
+    option{
+      width: 250px;
+      height: 20px;
+      text-align: center;  
+      background-color: rgb(61, 61, 61);
+      color: rgb(255, 215, 103);
+    }
+    textarea{
+      background-color: rgb(61, 61, 61);
+      color: rgb(255, 215, 103);
+
+    }
+    .radio{
+      background-color: rgb(61, 61, 61);
+      color: rgb(255, 215, 103);
+
+    }
+
+  </style>
+  
+  <body>
+    <center>
+    <form name="giris" action="Giris.html" method="get">
+      <div class="form1">
+      <fieldset>
+        <legend>Kişisel Bilgileri</legend>
+        
+      <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ad:</label>
+      <input type="text" name="ad"><br>
+
+      <label for="">Soyad:</label>
+      <input type="text" name="soyad"><br>
+      <label for="">Doğum Tarihi</label>
+      <input type="date" name="dt" ><br>
+      <label for="">E-posta</label>
+      <input type="email" name="email" ><br>
+      <label for="">Telefon</label>
+      <input type="tel" name="tel" ><br> 
+      <label for="">Yaş</label>
+      <input type="number" min="15"  name="yaş" ><br>
+      <label for="">Cinsiyet:</label>
+      <input type="radio" name="cins">Erkek
+      <input type="radio" name="cins">Kadın
+      <label for="">Doğum Yeri</label>
+      <select name="iller" size="1" id="">
+        <option value="34">İstanbul</option>
+        <option value="19">Çorum</option>
+        <option value="35">İzmir</option>
+        <option value="06">Ankara</option>
+        <option value="01">Adana</option>
+      </select>
+      
+    
+    </fieldset>
+  </div>
+    <br>
+    <fieldset>
+      <legend>Üyelik Bilgileri</legend>
+      <label for="">Kullanıcı Adı:</label><input type="text"><br>
+      <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Şifre:</label><input type="text"><br>
+
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>İlgi Alanları</legend>
+      <label for=""> Hobileriniz</label><br>
+      <input type="checkbox" name="k1">Basketbol
+      <input type="checkbox" name="k1">Futbol
+      <input type="checkbox" name="k1">Voleybol
+      <input type="checkbox" name="k1">Yüzme  
+      <input type="checkbox" name="k1">Kitap Okuma
+      <input type="checkbox" name="k1">Diğer
+      <br>
+      <br>
+      <label for="">Gezmek İstediğiniz İller</label><br>
+      <select name="gezi" multiple>
+        <option value="34">İstanbul</option>
+        <option value="19">Çorum</option>
+        <option value="35">İzmir</option>
+        <option value="06">Ankara</option>
+        <option value="01">Adana</option>
+      </select>
+      <label for=""> Sevdiğiniz Renk </label><br>
+      <input type="color" name="renk"><br>
+      <label for="">Kendinizi Tanıtın</label><br>
+      <textarea name="" id="" cols="" rows=""></textarea>
+
+    </fieldset>
+      
+    <input type="submit" value="Kaydet" >
+    <input type="reset" value="Temizle">
+
+
+
+
+    </form> 
+  </center>
+  </body>
+  </html>
+
+  
+  
+  

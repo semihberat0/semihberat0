@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kullanıcılar</title>
+</head>
+<body>
+  <h1>Giriş Bilgileri</h1>
+  <p>Ad: <span id="ad"></span></p>
+  <p>Soyad: <span id="soyad"></span></p>
+  <p>Doğum Tarihi: <span id="dt"></span></p>
+  <p>E-mail: <span id="email"></span></p>
+  <p>Telefon: <span id="tel"></span></p>
+  <p>Yaş: <span id="yaş"></span></p>
+
+
+
+  <script>
+    const params=new URLSearchParams(window.location.search);
+    document.getElementById('ad').innerText = params.get('ad');
+    document.getElementById('soyad').innerText = params.get('soyad');
+    document.getElementById('dt').innerText = params.get('dt');
+    document.getElementById('email').innerText = params.get('email');
+    document.getElementById('tel').innerText = params.get('tel');
+    document.getElementById('yaş').innerText = params.get('yaş');
+
+
+  </script>
+  
+</body>
+</html>
